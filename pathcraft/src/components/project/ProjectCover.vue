@@ -11,7 +11,6 @@ const { dark } = useTheme()
 
 <template>
   <div class="relative w-full h-full overflow-hidden">
-    <!-- Real image if provided -->
     <img
       v-if="project.cover.image"
       :src="project.cover.image"
@@ -21,7 +20,6 @@ const { dark } = useTheme()
       decoding="async"
     />
 
-    <!-- Stripes placeholder -->
     <div
       v-else-if="variant === 'stripes'"
       class="relative w-full h-full flex items-center justify-center"
@@ -41,7 +39,6 @@ const { dark } = useTheme()
       >{{ project.id }}.cover</span>
     </div>
 
-    <!-- Block placeholder -->
     <div
       v-else
       class="relative w-full h-full flex items-center justify-center"

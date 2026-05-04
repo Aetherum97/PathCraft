@@ -38,7 +38,7 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
         @click.self="emit('close')"
       >
         <div
-          class="relative w-[88%] max-w-[560px] rounded-2xl overflow-hidden"
+          class="relative w-[88%] max-w-140 rounded-2xl overflow-hidden"
           :style="{
             background: dark ? '#1a120c' : '#fdf8f1',
             color: dark ? '#fde6c8' : '#2a1a0c',
@@ -48,7 +48,6 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
             animation: 'popIn 0.25s cubic-bezier(.2,.8,.3,1.2)',
           }"
         >
-          <!-- Close button -->
           <button
             @click="emit('close')"
             class="absolute right-3 top-3 z-10 w-8 h-8 rounded-full flex items-center justify-center font-mono text-lg leading-none transition hover:scale-110"
@@ -56,14 +55,12 @@ onUnmounted(() => window.removeEventListener('keydown', onKey))
               background: dark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.05)',
             }"
             aria-label="Fermer"
-          >×</button>
+          >x</button>
 
-          <!-- Cover -->
           <div class="h-36 relative">
             <ProjectCover :project="project" variant="stripes" />
           </div>
 
-          <!-- Body -->
           <div class="px-6 pt-5 pb-6">
             <div class="flex items-baseline justify-between gap-3 mb-1">
               <h3 class="font-display text-2xl leading-tight">{{ project.title }}</h3>

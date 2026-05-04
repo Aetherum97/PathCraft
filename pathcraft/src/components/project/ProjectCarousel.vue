@@ -49,7 +49,6 @@ function onKey(e) {
     @keydown="onKey"
     aria-label="Galerie des projets"
   >
-    <!-- Slides -->
     <div class="relative overflow-hidden" style="height: 430px">
       <Transition :name="transitionName">
         <div :key="current" class="carousel-slide absolute inset-0 flex flex-col">

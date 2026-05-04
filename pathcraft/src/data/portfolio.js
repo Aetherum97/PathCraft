@@ -55,7 +55,7 @@ export const portfolioData = {
         "Tableau de bord d'administration avancé",
       ],
       cover: { hue: 38, label: "TR", image: tribuneoImg },
-      links: { live: null, repo: null },
+      links: { live: "https://tribuneo.com/", repo: null },
       tags: ["Pro", "Full-stack"],
     },
     {
