@@ -1,6 +1,3 @@
-// Source de vérité du portfolio.
-// Pour ajouter un projet : pousser un objet dans `projects` et c'est tout.
-
 import teintexpressImg from '../assets/projects/teintexpress.png'
 import tribuneoImg from '../assets/projects/tribuneo.png'
 import passionmangaImg from '../assets/projects/passion_manga.png'

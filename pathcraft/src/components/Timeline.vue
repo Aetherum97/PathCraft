@@ -18,7 +18,6 @@ const kindColors = {
 
 <template>
   <div class="relative pl-6">
-    <!-- Vertical line -->
     <div
       class="absolute left-2.5 top-1 bottom-1 w-px"
       :style="{ background: 'linear-gradient(to bottom, var(--accent), transparent)' }"
@@ -26,7 +25,6 @@ const kindColors = {
 
     <div class="space-y-5">
       <div v-for="(entry, i) in entries" :key="i" class="relative">
-        <!-- Dot -->
         <div
           class="absolute -left-4.5 top-1.5 w-2.5 h-2.5 rounded-full transition-all"
           :style="{
@@ -36,7 +34,6 @@ const kindColors = {
           }"
         />
 
-        <!-- Content -->
         <div class="flex items-baseline gap-3 flex-wrap">
           <span
             class="font-mono text-[10px] tabular-nums"

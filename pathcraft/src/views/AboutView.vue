@@ -69,7 +69,6 @@ const borderColor = computed(() => dark.value ? 'rgba(255,255,255,0.08)' : 'rgba
       </div>
     </section>
 
-    <!-- Timeline -->
     <section>
       <div
         class="font-mono text-[10px] uppercase tracking-[.22em] mb-5 flex items-center gap-2"
@@ -82,7 +81,6 @@ const borderColor = computed(() => dark.value ? 'rgba(255,255,255,0.08)' : 'rgba
       <Timeline :entries="portfolioData.timeline" />
     </section>
 
-    <!-- Links -->
     <section
       class="rounded-2xl p-5 flex flex-wrap gap-3"
       :style="{ background: cardBg, border: `1px solid ${borderColor}` }"

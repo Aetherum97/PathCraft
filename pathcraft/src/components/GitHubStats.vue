@@ -15,7 +15,6 @@ const { stats, cached, loading } = useGitHub()
       border: `1px solid ${dark ? 'rgba(255,255,255,0.08)' : 'rgba(42,26,12,0.08)'}`,
     }"
   >
-    <!-- Header -->
     <div class="flex items-center justify-between mb-4">
       <div
         class="font-mono text-[10px] uppercase tracking-[.22em] flex items-center gap-2"
@@ -33,7 +32,6 @@ const { stats, cached, loading } = useGitHub()
       >{{ loading ? 'chargement…' : (cached ? 'cache' : 'live') }}</span>
     </div>
 
-    <!-- Stats grid -->
     <div class="grid grid-cols-3 gap-4 mb-5">
       <div v-for="stat in [
         { label: 'Repos', val: stats.publicRepos },
@@ -51,7 +49,6 @@ const { stats, cached, loading } = useGitHub()
       </div>
     </div>
 
-    <!-- Language bar -->
     <div class="flex h-2 rounded-full overflow-hidden mb-2.5">
       <div
         v-for="lang in stats.topLanguages"
@@ -73,7 +70,6 @@ const { stats, cached, loading } = useGitHub()
       </span>
     </div>
 
-    <!-- Pinned repos -->
     <div class="mt-5 space-y-2">
       <div
         class="font-mono text-[10px] uppercase tracking-[.2em] opacity-50 mb-2"

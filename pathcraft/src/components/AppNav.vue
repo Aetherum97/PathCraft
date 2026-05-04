@@ -33,7 +33,6 @@ function isActive(path) {
       borderBottom: `1px solid ${dark ? 'rgba(255,255,255,0.06)' : 'rgba(42,26,12,0.06)'}`,
     }"
   >
-    <!-- Logo -->
     <RouterLink to="/" class="flex items-center gap-2.5 no-underline">
       <img
         src="../assets/photo_profil.png"
@@ -54,7 +53,6 @@ function isActive(path) {
       </div>
     </RouterLink>
 
-    <!-- Desktop nav -->
     <nav class="hidden md:flex items-center gap-1">
       <RouterLink
         v-for="link in links"
@@ -69,7 +67,6 @@ function isActive(path) {
       <ThemeToggle class="ml-2" />
     </nav>
 
-    <!-- Mobile: theme + burger -->
     <div class="flex items-center gap-2 md:hidden">
       <ThemeToggle />
       <button
@@ -90,7 +87,6 @@ function isActive(path) {
       </button>
     </div>
 
-    <!-- Mobile drawer -->
     <Transition
       enter-active-class="transition-all duration-200 ease-out"
       enter-from-class="opacity-0 -translate-y-2"

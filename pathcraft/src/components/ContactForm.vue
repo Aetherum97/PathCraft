@@ -6,7 +6,7 @@ const { dark } = useTheme()
 
 const vals = reactive({ name: '', email: '', message: '' })
 const touched = reactive({ name: false, email: false, message: false })
-const status = ref('idle') // idle | sending | ok | err
+const status = ref('idle')
 
 function validate(v) {
   const e = {}
@@ -62,7 +62,6 @@ function inputStyle(field) {
 </script>
 
 <template>
-  <!-- Success state -->
   <div
     v-if="status === 'ok'"
     class="rounded-2xl p-8 text-center"
@@ -77,7 +76,6 @@ function inputStyle(field) {
     <div class="font-mono text-[11px] opacity-60">Je te réponds sous 48h.</div>
   </div>
 
-  <!-- Error state -->
   <div
     v-else-if="status === 'err'"
     class="rounded-2xl p-6 text-center"
@@ -91,7 +89,6 @@ function inputStyle(field) {
     <div class="font-mono text-[11px] opacity-60">Essaie par email directement.</div>
   </div>
 
-  <!-- Form -->
   <form v-else @submit="submit" class="space-y-4" novalidate>
     <div>
       <label class="font-mono text-[10px] uppercase tracking-[.2em] opacity-60 block mb-1.5">
