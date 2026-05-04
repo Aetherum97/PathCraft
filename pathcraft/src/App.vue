@@ -45,7 +45,7 @@ useTheme()
     <footer class="mt-16 py-8 text-center">
       <p
         class="font-mono text-[10px] uppercase tracking-[.2em]"
-        style="color: rgba(150,100,60,0.5)"
+        style="color: rgba(150,100,60,0.75)"
       >
         Antoine Caps · {{ new Date().getFullYear() }} · Fait avec Vue 3 &amp; Tailwind
       </p>

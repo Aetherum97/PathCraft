@@ -30,13 +30,20 @@ async function submit(e) {
 
   status.value = 'sending'
   try {
-    const endpoint = import.meta.env.VITE_CONTACT_ENDPOINT
-    if (endpoint) {
-      await fetch(endpoint, {
+    const key = import.meta.env.VITE_WEB3FORMS_KEY
+    if (key) {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: vals.name, email: vals.email, message: vals.message }),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: key,
+          name: vals.name,
+          email: vals.email,
+          message: vals.message,
+        }),
       })
+      const data = await res.json()
+      if (!data.success) throw new Error(data.message)
     } else {
       await new Promise((r) => setTimeout(r, 900))
     }
