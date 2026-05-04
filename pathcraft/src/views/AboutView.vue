@@ -14,10 +14,8 @@ const borderColor = computed(() => dark.value ? 'rgba(255,255,255,0.08)' : 'rgba
 <template>
   <div class="stagger max-w-3xl mx-auto px-6 py-8 space-y-8">
 
-    <!-- Bio -->
     <section class="grid grid-cols-[100px_1fr] sm:grid-cols-[120px_1fr] gap-5 items-start">
-      <!-- Photo -->
-      <div class="aspect-[3/4] rounded-2xl overflow-hidden">
+      <div class="aspect-3/4 rounded-2xl overflow-hidden">
         <img
           src="../assets/photo_profil.png"
           alt="Antoine Caps"
@@ -27,7 +25,6 @@ const borderColor = computed(() => dark.value ? 'rgba(255,255,255,0.08)' : 'rgba
         />
       </div>
 
-      <!-- Bio text -->
       <div>
         <div
           class="font-mono text-[10px] uppercase tracking-[.22em] mb-3 flex items-center gap-2"
@@ -37,24 +34,23 @@ const borderColor = computed(() => dark.value ? 'rgba(255,255,255,0.08)' : 'rgba
           Bio
         </div>
         <h2
-          class="font-display leading-[1] mb-3"
+          class="font-display leading-none mb-3"
           :style="{
             fontSize: 'clamp(32px, 4.4vw, 48px)',
             color: dark ? '#fde6c8' : '#2a1a0c',
           }"
         >
-          Du chantier <em style="color: var(--accent)">au clavier</em>.
+          Du cuisinier <em style="color: var(--accent)">au clavier</em>.
         </h2>
         <p class="text-[13px] leading-relaxed" :style="{ color: muted }">
-          J'ai pivoté vers le code en 2022. BTS SIO, projets perso, puis alternance —
+          J'ai pivoté vers le code en 2022. BTS DWWM, Bachelor Concepteur développeur d'application, Master Architecte de Systèmes d'information en alternance —
           j'avance par projets concrets, en cherchant toujours le détail qui rend
           une interface naturelle. Je crois aux APIs propres, aux composants
-          réutilisables, et au CSS qui respire.
+          réutilisables, et au Clean Code.
         </p>
       </div>
     </section>
 
-    <!-- Skills -->
     <section>
       <div
         class="font-mono text-[10px] uppercase tracking-[.22em] mb-5 flex items-center gap-2"

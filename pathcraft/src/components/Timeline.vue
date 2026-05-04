@@ -28,7 +28,7 @@ const kindColors = {
       <div v-for="(entry, i) in entries" :key="i" class="relative">
         <!-- Dot -->
         <div
-          class="absolute -left-[18px] top-1.5 w-2.5 h-2.5 rounded-full transition-all"
+          class="absolute -left-4.5 top-1.5 w-2.5 h-2.5 rounded-full transition-all"
           :style="{
             background: entry.kind === 'now' ? 'var(--accent)' : (dark ? '#231811' : '#fff8ec'),
             border: `1.5px solid var(--accent)`,

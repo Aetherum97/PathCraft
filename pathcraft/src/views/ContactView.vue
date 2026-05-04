@@ -46,7 +46,7 @@ const links = [
         Contact
       </div>
       <h2
-        class="font-display leading-[1]"
+        class="font-display leading-none"
         :style="{
           fontSize: 'clamp(34px, 4.6vw, 52px)',
           color: dark ? '#fde6c8' : '#2a1a0c',
@@ -55,16 +55,14 @@ const links = [
         Un projet, une question,<br />
         <em style="color: var(--accent)">une opportunité</em> ?
       </h2>
-      <p class="text-[13px] leading-relaxed mt-3 max-w-[440px]" :style="{ color: muted }">
+      <p class="text-[13px] leading-relaxed mt-3 max-w-110" :style="{ color: muted }">
         Je réponds sous 48h. Tu peux aussi me joindre directement sur les réseaux ci-dessous.
       </p>
     </section>
 
-    <!-- Form + links -->
     <section class="grid grid-cols-1 md:grid-cols-[1fr_200px] gap-6">
       <ContactForm />
 
-      <!-- Direct links -->
       <div class="space-y-2.5">
         <a
           v-for="link in links"

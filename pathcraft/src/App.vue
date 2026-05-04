@@ -2,16 +2,14 @@
 import { useTheme } from './composables/useTheme.js'
 import AppNav from './components/AppNav.vue'
 
-// init theme (applies dark class to <html> on load)
 useTheme()
 </script>
 
 <template>
   <div class="min-h-screen transition-colors duration-300">
-    <!-- Warm gradient blobs -->
     <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10">
       <div
-        class="absolute -top-32 -right-20 w-[420px] h-[420px] rounded-full"
+        class="absolute -top-32 -right-20 w-105] h-105 rounded-full"
         style="
           background: radial-gradient(circle, rgba(200,84,44,0.2) 0%, transparent 70%);
           filter: blur(40px);
@@ -19,7 +17,7 @@ useTheme()
         "
       />
       <div
-        class="absolute -bottom-40 -left-32 w-[460px] h-[460px] rounded-full"
+        class="absolute -bottom-40 -left-32 w-115 h-115 rounded-full"
         style="
           background: radial-gradient(circle, oklch(0.85 0.1 55) 0%, transparent 70%);
           filter: blur(50px);
@@ -44,7 +42,6 @@ useTheme()
       </RouterView>
     </main>
 
-    <!-- Footer -->
     <footer class="mt-16 py-8 text-center">
       <p
         class="font-mono text-[10px] uppercase tracking-[.2em]"

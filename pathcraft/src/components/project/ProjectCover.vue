@@ -16,7 +16,7 @@ const { dark } = useTheme()
       v-if="project.cover.image"
       :src="project.cover.image"
       :alt="project.title"
-      class="w-full h-full object-cover"
+      class="w-full h-full object-contain"
       loading="lazy"
       decoding="async"
     />

@@ -16,7 +16,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="w-full h-[5px] rounded-full overflow-hidden"
+    class="w-full h-1.25 rounded-full overflow-hidden"
     :style="{ background: dark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)' }"
   >
     <div
