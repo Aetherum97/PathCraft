@@ -3,6 +3,8 @@
 
 import teintexpressImg from '../assets/projects/teintexpress.png'
 import tribuneoImg from '../assets/projects/tribuneo.png'
+import passionmangaImg from '../assets/projects/passion_manga.png'
+import csharpLogoImg from '../assets/projects/csharp_logo.png'
 
 export const portfolioData = {
   identity: {
@@ -70,7 +72,7 @@ export const portfolioData = {
         "Système de favoris + recommandations",
         "Authentification multi-rôles",
       ],
-      cover: { hue: 350, label: "PM", image: null },
+      cover: { hue: 350, label: "PM", image: passionmangaImg },
       links: { live: null, repo: null },
       tags: ["École", "Full-stack"],
     },
@@ -89,7 +91,7 @@ export const portfolioData = {
         "Migrations, seeds & policies par défaut",
         "Pipeline CI/CD complet",
       ],
-      cover: { hue: 200, label: "TC", image: null },
+      cover: { hue: 200, label: "TC", image: csharpLogoImg },
       links: {
         live: null,
         repo: "https://github.com/Aetherum97/MyApiCleanArchiTemplate",

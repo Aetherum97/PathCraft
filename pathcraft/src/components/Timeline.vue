@@ -20,7 +20,7 @@ const kindColors = {
   <div class="relative pl-6">
     <!-- Vertical line -->
     <div
-      class="absolute left-1.5 top-1 bottom-1 w-px"
+      class="absolute left-2.5 top-1 bottom-1 w-px"
       :style="{ background: 'linear-gradient(to bottom, var(--accent), transparent)' }"
     />
 
