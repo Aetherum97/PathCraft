@@ -12,6 +12,11 @@ const muted = computed(() => dark.value ? 'rgba(253,230,200,0.65)' : 'rgba(42,26
 const cardBg = computed(() => dark.value ? '#231811' : '#fff8ec')
 const borderColor = computed(() => dark.value ? 'rgba(255,255,255,0.08)' : 'rgba(42,26,12,0.08)')
 const pageBg = computed(() => dark.value ? '#1a120c' : '#faf3e8')
+const dateWithMonthsAndYears = computed(() => {
+  const now = new Date()
+  const options = { month: 'long', year: 'numeric' }
+  return now.toLocaleDateString('fr-FR', options)
+})
 </script>
 
 <template>
@@ -63,9 +68,9 @@ const pageBg = computed(() => dark.value ? '#1a120c' : '#faf3e8')
         </h1>
 
         <p class="mt-5 max-w-120 text-[15px] leading-relaxed" :style="{ color: muted }">
-          Développeur web full-stack en alternance. Je crée des interfaces soignées
-          en <em class="font-display">Vue</em>, des APIs propres
-          en <em class="font-display">.NET</em>, et j'aime quand le code raconte une histoire.
+          Développeur web et mobile en alternance. Je crée des interfaces soignées
+          en <em class="font-display">Flutter</em>, des APIs propres
+          en <em class="font-display">.NET</em> , <em class="font-display">PHP</em> et j'aime quand le code est clair et maintenable.
         </p>
 
         <div class="flex items-center gap-3 mt-6 flex-wrap">
@@ -173,7 +178,7 @@ const pageBg = computed(() => dark.value ? '#1a120c' : '#faf3e8')
             En ce moment
           </span>
         </div>
-        <span class="font-mono text-[10px]" :style="{ color: muted }">mai · 2026</span>
+        <span class="font-mono text-[10px]" :style="{ color: muted }">{{dateWithMonthsAndYears}}</span>
       </div>
       <div
         class="mt-2 font-display text-lg leading-snug"
