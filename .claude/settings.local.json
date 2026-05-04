@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(mkdir -p /mnt/c/Users/spook/.claude/projects/c--Users-spook-Documents-Developpement-Master-Vue-PathCraft/design_files)",
+      "Bash(tar -xf /mnt/c/Users/spook/.claude/projects/c--Users-spook-Documents-Developpement-Master-Vue-PathCraft/design_extracted.json -C /mnt/c/Users/spook/.claude/projects/c--Users-spook-Documents-Developpement-Master-Vue-PathCraft/design_files)",
+      "Read(//mnt/c/Users/spook/.claude/projects/c--Users-spook-Documents-Developpement-Master-Vue-PathCraft/**)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\spook\\\\.claude\\\\projects\\\\c--Users-spook-Documents-Developpement-Master-Vue-PathCraft\\\\design_files\" -Recurse -Force | ForEach-Object { $_.FullName })",
+      "PowerShell(New-Item -ItemType Directory -Path \"c:\\\\Users\\\\spook\\\\Documents\\\\Developpement\\\\Master\\\\Vue\\\\PathCraft\\\\pathcraft\\\\src\\\\data\" -Force)",
+      "PowerShell(New-Item -ItemType Directory -Path \"c:\\\\Users\\\\spook\\\\Documents\\\\Developpement\\\\Master\\\\Vue\\\\PathCraft\\\\pathcraft\\\\src\\\\composables\" -Force)",
+      "PowerShell(New-Item -ItemType Directory -Path \"c:\\\\Users\\\\spook\\\\Documents\\\\Developpement\\\\Master\\\\Vue\\\\PathCraft\\\\pathcraft\\\\src\\\\components\\\\project\" -Force)",
+      "PowerShell(New-Item -ItemType Directory -Path \"c:\\\\Users\\\\spook\\\\Documents\\\\Developpement\\\\Master\\\\Vue\\\\PathCraft\\\\pathcraft\\\\src\\\\components\\\\skills\" -Force)",
+      "PowerShell(New-Item -ItemType Directory -Path \"c:\\\\Users\\\\spook\\\\Documents\\\\Developpement\\\\Master\\\\Vue\\\\PathCraft\\\\pathcraft\\\\src\\\\router\" -Force)"
+    ]
+  }
+}
