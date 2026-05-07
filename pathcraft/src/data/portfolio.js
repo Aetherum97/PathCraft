@@ -175,7 +175,7 @@ export const portfolioData = {
     },
     {
       year: "2024",
-      title: "Début de formation Bachelor",
+      title: "Formation Bachelor",
       label: "Formation",
       description:
         "Entrée en alternance en tant que concepteur développeur d'application.",
