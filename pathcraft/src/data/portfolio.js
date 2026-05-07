@@ -175,10 +175,10 @@ export const portfolioData = {
     },
     {
       year: "2024",
-      title: "Formation Bachelor",
+      title: "Bachelor Concepteur Développeur d'Application",
       label: "Formation",
       description:
-        "Entrée en alternance en tant que concepteur développeur d'application.",
+        "Formation en alternance en tant que concepteur développeur d'application.",
       kind: "work",
     },
     {
